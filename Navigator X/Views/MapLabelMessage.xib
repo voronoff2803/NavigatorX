@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapLabel">
+            <connections>
+                <outlet property="arrowShape" destination="Csp-m7-r0i" id="JuO-DA-Tdi"/>
+                <outlet property="bgView" destination="3G4-yI-t7r" id="0RJ-Qn-bi7"/>
+                <outlet property="textLabel" destination="klS-As-Jev" id="ZDY-2K-V4O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" interfaceStyle="light" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="MapLabel" customModule="Navigator_X" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="33"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" image="pinShadow" translatesAutoresizingMaskIntoConstraints="NO" id="5Yt-fD-YPo">
+                    <rect key="frame" x="-24" y="-20" width="166" height="76"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3G4-yI-t7r">
+                    <rect key="frame" x="1" y="0.0" width="116" height="26"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Закрыто на ремонт" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klS-As-Jev">
+                            <rect key="frame" x="8" y="0.0" width="100" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="E06-h1-ChL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="klS-As-Jev" secondAttribute="bottom" id="2Th-gH-MaI"/>
+                        <constraint firstItem="klS-As-Jev" firstAttribute="leading" secondItem="3G4-yI-t7r" secondAttribute="leading" constant="8" id="eOq-5c-1QL"/>
+                        <constraint firstAttribute="trailing" secondItem="klS-As-Jev" secondAttribute="trailing" constant="8" id="kPR-G4-I4f"/>
+                        <constraint firstItem="klS-As-Jev" firstAttribute="top" secondItem="3G4-yI-t7r" secondAttribute="top" id="vMz-Iz-uyc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusSize">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowShape" translatesAutoresizingMaskIntoConstraints="NO" id="Csp-m7-r0i">
+                    <rect key="frame" x="43" y="24" width="32" height="8"/>
+                    <color key="tintColor" name="WhiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="Kax-wc-xxB"/>
+                        <constraint firstAttribute="height" constant="8" id="gLP-h8-yRY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5Yt-fD-YPo" firstAttribute="leading" secondItem="3G4-yI-t7r" secondAttribute="leading" constant="-25" id="2m5-rE-2RX"/>
+                <constraint firstItem="Csp-m7-r0i" firstAttribute="centerX" secondItem="3G4-yI-t7r" secondAttribute="centerX" id="6rL-mT-3Bi"/>
+                <constraint firstAttribute="bottom" secondItem="3G4-yI-t7r" secondAttribute="bottom" constant="7" id="6wB-MN-wlw"/>
+                <constraint firstItem="Csp-m7-r0i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="DxS-xL-gv1"/>
+                <constraint firstItem="3G4-yI-t7r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PIf-H3-SNG"/>
+                <constraint firstItem="5Yt-fD-YPo" firstAttribute="trailing" secondItem="3G4-yI-t7r" secondAttribute="trailing" constant="25" id="T1Z-qs-9Lr"/>
+                <constraint firstItem="5Yt-fD-YPo" firstAttribute="top" secondItem="3G4-yI-t7r" secondAttribute="top" constant="-20" id="kmn-LR-Tkc"/>
+                <constraint firstItem="5Yt-fD-YPo" firstAttribute="bottom" secondItem="3G4-yI-t7r" secondAttribute="bottom" constant="30" id="rsP-R1-H0F"/>
+                <constraint firstItem="3G4-yI-t7r" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sBl-RM-Olv"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-33.333333333333336" y="-148.32589285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowShape" width="44" height="16"/>
+        <image name="pinShadow" width="96" height="58"/>
+        <namedColor name="WhiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

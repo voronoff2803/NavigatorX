@@ -1,0 +1,50 @@
+PODS:
+  - CleanyModal (1.0.2)
+  - Eureka (5.3.1)
+  - FloatingPanel (2.0.0)
+  - MarqueeLabel (4.0.5)
+  - NotificationBannerSwift (3.0.2):
+    - MarqueeLabel (~> 4.0.0)
+    - SnapKit (~> 5.0.0)
+  - Realm (10.0.0-beta.5):
+    - Realm/Headers (= 10.0.0-beta.5)
+  - Realm/Headers (10.0.0-beta.5)
+  - RealmSwift (10.0.0-beta.5):
+    - Realm (= 10.0.0-beta.5)
+  - SnapKit (5.0.1)
+  - TagListView (1.4.1)
+
+DEPENDENCIES:
+  - CleanyModal
+  - Eureka
+  - FloatingPanel
+  - NotificationBannerSwift (~> 3.0.0)
+  - RealmSwift (= 10.0.0-beta.5)
+  - TagListView
+
+SPEC REPOS:
+  trunk:
+    - CleanyModal
+    - Eureka
+    - FloatingPanel
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - Realm
+    - RealmSwift
+    - SnapKit
+    - TagListView
+
+SPEC CHECKSUMS:
+  CleanyModal: 51cf1b355c8bdab8893d51cea8d28529be5219d9
+  Eureka: 859877ab1e85661b6b7e810015d430e937d9cc7d
+  FloatingPanel: b0d4f9b2312b21741a18b659ddfa206b60d3b97a
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  NotificationBannerSwift: 713e20f21b6105f4a36a00e5d9fa414a930d3d8e
+  Realm: e30d3a77421b1b64932ce5843ba7d08afad749fd
+  RealmSwift: 80488a4f1388b2c5681066f0f26757989034edfb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+
+PODFILE CHECKSUM: fa9fabf1dd4081d8ca871e2377159eaf9ed4f269
+
+COCOAPODS: 1.9.1
